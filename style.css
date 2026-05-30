@@ -10,6 +10,12 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .title {
     font-family: 'Poppins', sans-serif;
 }
@@ -65,12 +71,24 @@
     width: 100vw;
 }
 
+.video {
+    display: none;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .trainingA {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .exercise1A {
@@ -79,6 +97,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .copyright {
