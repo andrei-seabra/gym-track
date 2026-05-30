@@ -71,7 +71,11 @@ body {
     width: 100vw;
 }
 
-.video {
+.activated {
+    transform: rotate(180deg);
+}
+
+.video-hidden {
     display: none;
 }
 
@@ -82,7 +86,7 @@ body {
     align-items: center;
 }
 
-.trainingA {
+.training {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -91,7 +95,7 @@ body {
     gap: 2rem;
 }
 
-.exercise1A {
+.exercise {
     width: 95vw;
     display: flex;
     flex-direction: column;
