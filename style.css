@@ -10,12 +10,6 @@
     margin: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
 .title {
     font-family: 'Poppins', sans-serif;
 }
@@ -67,6 +61,13 @@ body {
     align-items: center;
 }
 
+.banner {
+    width: 100vw;
+    height: 25vh;
+    display: block;
+    background-color: aqua;
+}
+
 .container {
     width: 100vw;
 }
@@ -80,10 +81,14 @@ body {
 }
 
 .heading {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+.heading img {
+    transition: transform .3s ease;
 }
 
 .training {
