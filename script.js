@@ -1,12 +1,10 @@
-const video1 = document.getElementById('exercise1A-video');
+const headings = document.querySelectorAll('.heading');
 
-const heading1 = document.getElementById('exercise1A');
+headings.forEach(heading => {
+    heading.addEventListener('click', () => {
+        const video = heading.nextElementSibling;
 
-function toggleExerciseCard(heading, video) {
-    heading.firstElementChild.classList.toggle('activated');
-    video.classList.toggle('video-hidden');
-}
-
-heading1.addEventListener('click', () => {
-    toggleExerciseCard(heading1, video1);
+        heading.querySelector('img').classList.toggle('activated');
+        video.classList.toggle('video-hidden');
+    });
 });

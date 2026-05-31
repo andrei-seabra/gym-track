@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .title {
     font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +24,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
 }
 
 .menu {
@@ -70,6 +75,7 @@
 
 .container {
     width: 100vw;
+    padding-top: 10vh;
 }
 
 .activated {
@@ -97,6 +103,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 10vh;
     gap: 2rem;
 }
 
