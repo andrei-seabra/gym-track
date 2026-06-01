@@ -1,5 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --body-bg-color: #F8FAFC;
+
+    --training-bg-color: #3B82F6;
+    --heading-bg-color: #60A5FA;
+    --exercise-bg-color: #E2E8F0;
+
+    --light-bg-color: #fff;
+    --dark-bg-color: #2563EB;
+
+    --text-color: #F8FAFC;
+    --second-text-color: #1E293B;
+    --point-color: #93C5FD;
+}
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -15,11 +29,13 @@ html {
 }
 
 body {
+    background-color: var(--body-bg-color);
     overflow-x: hidden;
 }
 
 .title {
     font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 5vw, 2rem);
 }
 
 .menu-header {
@@ -28,7 +44,9 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: var(--dark-bg-color);
     position: fixed;
+    z-index: 9999;
 }
 
 .menu {
@@ -43,9 +61,15 @@ body {
     width: 22.5vw;
     height: 10vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    text-transform: lowercase;
+    color: var(--text-color);
     font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.point {
+    font-family: "Pontano Sans", sans-serif;
+    color: var(--point-color);
 }
 
 .menu-list {
@@ -68,13 +92,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .banner {
     width: 100vw;
     height: 25vh;
     display: block;
-    background-color: aqua;
 }
 
 .container {
@@ -95,6 +120,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .5rem 1rem;
+    border-radius: .25rem .25rem 0 0;
+    background-color: var(--point-color);
+    color: var(--second-text-color);
+    font-size: clamp(1rem, 5vw, 2rem);  
 }
 
 .heading img {
@@ -108,7 +138,15 @@ body {
     justify-content: center;
     align-items: center;
     scroll-margin-top: 10vh;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.training-title {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: var(--training-bg-color);
+    color: var(--text-color);
 }
 
 .exercise {
@@ -117,7 +155,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    
 }
 
 .copyright {
@@ -126,6 +164,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+    background-color: var(--dark-bg-color);
 }
 
 .copyright-label {
@@ -134,4 +174,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--text-color);
 }
