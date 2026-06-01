@@ -96,6 +96,11 @@ body {
     color: var(--text-color);
 }
 
+.menu-link:active {
+    background-color: var(--point-color);
+    color: var(--second-text-color);
+}
+
 .banner {
     width: 100vw;
     height: 25vh;
