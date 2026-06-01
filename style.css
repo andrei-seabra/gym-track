@@ -131,6 +131,10 @@ body {
     transition: transform .3s ease;
 }
 
+.video {
+    width: 90%;
+}
+
 .training {
     width: 100vw;
     display: flex;
